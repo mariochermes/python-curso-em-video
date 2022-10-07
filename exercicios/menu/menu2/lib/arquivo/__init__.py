@@ -1,6 +1,6 @@
 from lib.interface import *
 
-def arqExiste(nome):
+def arqExiste (nome):
     try:
         a = open(nome, 'rt')
     except FileNotFoundError:

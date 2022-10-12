@@ -1,3 +1,0 @@
-from Interface import *
-
-menu()

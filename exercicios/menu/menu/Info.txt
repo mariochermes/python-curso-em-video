@@ -1,2 +1,0 @@
-nome: Mário | idade: 21 
-nome: Carol | idade: 21 

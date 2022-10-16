@@ -1,2 +1,2 @@
-cidade = str(input('Em que cidade você nasceu? ')).lower()
-print('santo' in cidade)
+cidade = str(input('Em que cidade você nasceu? ')).lower().strip()
+print(cidade[5] == 'santo')

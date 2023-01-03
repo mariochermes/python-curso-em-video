@@ -15,6 +15,8 @@ for c in exp:
             tmp.append(c)
             break
 
+print('—' * 50)
+
 if len(tmp) == 0:
     print('Sua expressão é válida')
 else:

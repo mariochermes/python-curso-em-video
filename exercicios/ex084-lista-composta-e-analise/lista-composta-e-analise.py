@@ -19,7 +19,7 @@ while True:
     if continuar == 'n':
         break
 
-print('—' * 40)
+print('—' * 50)
 print(f'Ao todo, foram cadastradas {len(pessoas)} pessoas')
 print(f'O maior peso foi de {maior_peso}. Peso de ', end='')
 print(*[p[0] for p in pessoas if p[1] == maior_peso])

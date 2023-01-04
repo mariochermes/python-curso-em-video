@@ -11,7 +11,7 @@ for i in range(7):
 valores[0].sort()
 valores[1].sort()
 
-print('—' * 40)
+print('—' * 50)
 print('Os valores pares digitados foram: ', end='')
 print(*valores[0])
 print('Os valores ímpares digitados foram: ', end='')

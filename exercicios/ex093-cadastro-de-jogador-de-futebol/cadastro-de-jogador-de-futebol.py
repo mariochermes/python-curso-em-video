@@ -23,6 +23,3 @@ print(f"O jogador {jogador['nome']} jogou {len(gols)} partidas")
 for i in range(len(gols)):
     print(f" - Na partida {i + 1}, fez {jogador['gols'][i]} gols")
 print(f"Foi um total de {jogador['total']} gols")
-
-
-        

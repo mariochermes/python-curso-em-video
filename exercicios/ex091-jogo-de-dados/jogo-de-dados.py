@@ -1,4 +1,5 @@
 from random import randint
+from time import sleep
 
 jogadores = {}
 
@@ -21,5 +22,5 @@ jogadores = dict(sorted(jogadores.items(),key= lambda x:x[1], reverse=True))
 
 print(f"{' RANKING ':=^30}")
 for i, (k, v) in enumerate(jogadores.items()):
+    sleep(1)
     print(f"{f'{i + 1}º lugar: {k} com {v}':^30}")
-

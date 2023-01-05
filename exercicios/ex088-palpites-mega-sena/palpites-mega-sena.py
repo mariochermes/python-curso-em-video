@@ -15,6 +15,7 @@ for i in range(qtd_jogos):
     for j in range(6):
         v = randint(1, 100)
         jogo.append(v)
+        sleep(0.5)
         print(v, end=' ')
     print()
 print('-=' * 15)

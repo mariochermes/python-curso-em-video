@@ -19,7 +19,7 @@ print('—' * 50)
 print(f"{'No.':<10}{'NOME':<15}{'MÉDIA':<10}")
 print('—' * 30)
 for i, a in enumerate(alunos):
-    print(f'{i:<10}{a[0]:<15}{a[3]:<10}')
+    print(f'{i:<10}{a[0]:<15}{a[3]:<10.2f}')
 print('—' * 30)
 
 while True:

@@ -1,5 +1,5 @@
 def main():
-    resp = notas(5.5, 2.5, 1.5)
+    resp = notas(5.5, 2.5, 1.5, 6)
     print(resp)
 
 

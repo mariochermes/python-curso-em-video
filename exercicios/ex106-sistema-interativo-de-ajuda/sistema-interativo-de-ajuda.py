@@ -15,7 +15,7 @@ def main():
     while True:
         texto_entrelinhas('SISTEMA DE AJUDA', cores['verde'])
         comando = input('Função ou Biblioteca > ').lower()
-        
+
         if comando == 'fim':
             break
         else:

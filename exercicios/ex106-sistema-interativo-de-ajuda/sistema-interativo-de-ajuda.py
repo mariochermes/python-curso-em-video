@@ -1,3 +1,5 @@
+from time import sleep
+
 cores = {'limpa': '\033[m',
             'vermelho': '\033[0;31m',
             'verde': '\033[0;32m',
@@ -9,11 +11,11 @@ cores = {'limpa': '\033[m',
 
 
 def main():
-    texto_entrelinhas('SISTEMA DE AJUDA', cores['verde'])
-
     comando = ''
     while True:
+        texto_entrelinhas('SISTEMA DE AJUDA', cores['verde'])
         comando = input('Função ou Biblioteca > ').lower()
+        
         if comando == 'fim':
             break
         else:
@@ -23,8 +25,9 @@ def main():
 
 
 def ajuda(com):
-    texto_entrelinhas(f'Acessando o manual do \'{com}\'', cores['azul'])
+    texto_entrelinhas(f'Acessando o manual do \'{com}\'...', cores['azul'])
     help(com)
+    sleep(2)
 
 
 def texto_entrelinhas(texto, cor=cores['branco']):
@@ -33,6 +36,7 @@ def texto_entrelinhas(texto, cor=cores['branco']):
     print(f'  {texto}')
     print('—' * (len(texto) + 4))
     print(cores['limpa'], end='')
+    sleep(1)
 
 
 main()

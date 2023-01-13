@@ -1,4 +1,11 @@
-def leia_dinheiro()
+def leia_dinheiro(texto):
+    while True:
+        entrada = input(texto).replace(',', '.')
+
+        if entrada.isalpha():
+            print(f"\033[0;31mERRO: \"{entrada}\" é um preço inválido\033[m")
+        else:
+            return float(entrada)
 
 
 def aumentar(preco, taxa, form=False):

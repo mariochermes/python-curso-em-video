@@ -7,13 +7,16 @@ if not arquivo_existe(arq):
     criar_arquivo(arq)
 
 while True:
-    resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoas', 'Sair do Sistema'])
+    resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova pessoa', 'Sair do Sistema'])
 
     if resposta == 1:
-        ler_arquivo()
+        ler_arquivo(arq)
     elif resposta == 2:
-        cadastrar_pessoas()
-    elif resposta == 3:
+        texto_entrelinhas('NOVO CADASTRO')
+        nome = input('Nome: ')
+        idade = int(input('Idade: '))
+        cadastrar_pessoa(arq, nome, idade)
+    elif resposta == 3 or resposta == 0:
         print('Saindo. Até logo')
         break
     else:

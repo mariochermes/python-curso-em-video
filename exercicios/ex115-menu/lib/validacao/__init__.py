@@ -3,7 +3,7 @@ def leia_int(texto):
         try:
             n = int(input(texto))
         except (ValueError, TypeError):
-            print(f"\033[0;31mERRO: \"{n}\" não é um número inteiro válido\033[m")
+            print(f"\033[0;31mERRO: digite um número inteiro válido\033[m")
             continue
         except KeyboardInterrupt:
             print(f"\033[0;31mERRO: Entrada de dados foi interrompida pelo usuário\033[m")
@@ -17,7 +17,7 @@ def leia_float(texto):
         try:
             n = float(input(texto).replace(',', '.'))
         except (ValueError, TypeError):
-            print(f"\033[0;31mERRO: \"{n}\" não é um número inteiro válido\033[m")
+            print(f"\033[0;31mERRO: digite um número válido\033[m")
             continue
         except KeyboardInterrupt:
             print(f"\033[0;31mERRO: Entrada de dados foi interrompida pelo usuário\033[m")

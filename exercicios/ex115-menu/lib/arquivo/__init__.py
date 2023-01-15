@@ -16,22 +16,22 @@ def criar_arquivo(nome):
         a = open(nome, 'wt+')
         a.close
     except:
-        print('Houve um erro na criação do arquivo')
+        print(cores('Houve um erro na criação do arquivo', 'vermelho'))
     else:
-        print(f'Arquivo {nome} criado com sucesso')
+        print(cores(f'Arquivo {nome} criado com sucesso', 'verde'))
 
 
 def ler_arquivo(nome):
     try:
         a = open(nome, 'rt')
     except:
-        print('Erro ao ler o arquivo! ')
+        print(cores('Erro ao ler o arquivo!', 'vermelho'))
     else:
         texto_entrelinhas('PESSOAS CADASTRADAS')
         for l in a:
             dado = l.split(';')
             dado[1] = dado[1].replace('\n', '')
-            print(f'{dado[0]}{dado[1]:>32} anos')
+            print(f'{dado[0]:<18}{dado[1]:>19} anos')
     finally:
         a.close()
 
@@ -41,14 +41,14 @@ def cadastrar_pessoa(nome_arquivo, nome_pessoa, idade):
         a = open(nome_arquivo, 'at')
         a.close
     except:
-        print('Erro ao ler o arquivo! ')
+        print(cores('Erro ao ler o arquivo!', 'vermelho'))
     else:
         try:
             a.write(f'{nome_pessoa};{idade}\n')
         except:
-            print('Houve um erro  na hora de escrever os dados')
+            print(cores('Houve um erro  na hora de escrever os dados', 'vermelho'))
         else:
-            print(f'Novo registro de {nome_pessoa} adicionado')
+            print(cores(f'Novo registro de {nome_pessoa} adicionado', 'verde'))
         
     
         

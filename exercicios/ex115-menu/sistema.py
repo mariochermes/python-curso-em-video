@@ -20,6 +20,6 @@ while True:
         print('Saindo. Até logo')
         break
     else:
-        print('ERRO! Digite uma opção válida')
+        print(cores('ERRO! Digite uma opção válida', 'vermelho'))
 
     sleep(1)

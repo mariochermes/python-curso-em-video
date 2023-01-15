@@ -27,7 +27,7 @@ def menu(lista):
     texto_entrelinhas('MENU PRINCIPAL')
 
     for i, item in enumerate(lista):
-        print(f'{i + 1} - {item}')
+        print(cores(f'{i + 1} -', 'amarelo'), cores(f'{item}', 'azul'))
     print(linha())
 
     opcao = leia_int('Sua opção: ')
